@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV1 - Programação, Estrutura e Mineração de Dados - D.20231.A</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flexbox;
+            max-width: 700px;
+            height: 300px;
+            margin: auto;
+            background-color: rgb(219, 219, 219);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 5px 10px rgb(180, 179, 179);
+        }
+
+        label {
+            padding-right: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            margin-right: 15px;
+        }
+
+        #menu {
+            width: 22%;
+            margin-right: 50px; padding: 0;
+            float: right;
+            }
+        #menu ul li {
+            margin: 0; padding: 0px;
+            border-bottom: 1px solid #CCC;
+            text-align: left;
+            list-style-type: none;
+            }
+        #menu a:link {
+            background: #F5F5F5;
+            color: #666;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 8px;
+            display: block;
+            }
+
+        #menu a:hover {
+            background: #E5F0FF;
+            color: #039;
+            }
+        
+            .options {
+                margin: 5px;
+            }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Acessos & Permissões</h1>
+    </header>
+
+    <div class="container">
+        <div id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Acessos</a></li>
+                <li><a href="index.html">Departamento</a></li>
+                <li><a href="#">RH</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </div>
+        <!--
+        <form action="">
+            <label for="nome">Nome do Departamento:</label>
+            <input type="text" id="nome-dpt"><br>
+            <label for="">Orçamento Anual:</label>
+            <input type="text"><br>
+            <label for="">Resposnsabilidade</label>
+            <input type="text"><br>
+            <button>Criar</button>
+            <button>Limpar Campos</button>
+        </form>-->
+
+        <form action="">
+            <div class="options">
+                <label for="">Selecione o Departamento</label>
+                <select name="" id="">
+                    <option>RH</option>
+                    <option>Comercial</option>
+                    <option>TI</option>
+                    <option>Infraestrutura</option>
+                </select>
+            </div>
+            <div class="options">
+                <label for="">Selecione o Sistema</label>
+                <select name="" id="">
+                    <option>ERP</option>
+                    <option>Drive</option>
+                    <option>GCP</option>
+                    <option>Email</option>
+                </select>
+            </div>
+            <div class="options">
+                <label for="">Selecione o Usuário</label>
+                <select name="" id="">
+                    <option>André Pedro</option>
+                    <option>Victor Marques</option>
+                    <option>Thiago Reina</option>
+                    <option>Leticia Giffoni</option>
+                </select>
+            </div>
+            
+        </form>
+        <fieldset>
+            <legend>Defina as permissoes de usuário:</legend>
+            <div>
+                <input type="checkbox" id="scales" name="scales" checked>
+                <label for="scales">Leitura</label>
+              </div>
+          
+              <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Edição</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Gerenciamento</label>
+              </div>
+            
+        </fieldset>
+
+        <button>Submeter</button>
+        <button>Limpar seleções</button>
+        <button>Resetar Permissões</button>
+    </div>
+
+</body>
+</html>
